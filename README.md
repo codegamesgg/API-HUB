@@ -51,7 +51,7 @@ Body:
 
 ```json
 {
-  "token": "ea135929105c4f29a0f.ea15117d2960926f.ea135929105c4f29a0f5"
+  "token": "##I##.#LOVE#.###GAMES###"
 }
 ```
 

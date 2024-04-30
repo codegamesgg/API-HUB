@@ -1,3 +1,24 @@
+Replenishing mobile games via the CodeGames occurs as follows:
+
+1. API Integration: 
+To start working with the CodeGames API, your company must go through the registration and verification process. This includes verifying legitimacy and compliance requirements. 
+Upon successful verification, you'll receive access to API keys, enabling you to utilize various platform functions.
+
+2. API Requests: 
+The API supports various types of requests for handling replenishments, including retrieving a list of available games, verifying user identifiers, obtaining the reseller's balance, executing top-ups, and tracking order statuses. 
+Python code examples demonstrate how to use these requests:
+Getting a list of available games: Perform a GET request to /codegames_games_available to retrieve a list of games that can be replenished through your account.
+Replenishing a game account: A POST request to /codegames_merchant_topup_api allows you to submit data for replenishment, including the user identifier, game, and desired amount.
+
+3. Checking order status: 
+
+A POST request to /track_order to check the status of a completed order.
+Handling responses: The API returns JSON responses, which may indicate successful execution of the request (e.g., code 200) or various errors (e.g., code 403 for invalid requests or code 400 for data errors).
+Access to the CodeGames Top-up API is granted only after your company has been successfully verified and compliance requirements have been confirmed. 
+This ensures the security and reliability of interaction between your systems and our API."
+
+Available mobile games for top-up by login (By UID):
+
 Game Code                | Game Name                          | Geo Availability
 -------------------------|------------------------------------|-----------------
 pubgm                    | PUBG Mobile                        | Global

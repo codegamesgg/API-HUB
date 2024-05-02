@@ -1,17 +1,13 @@
 # CODE GAMES API-HUB
-CodeGames.gg – это глобальный поставщик игровых сервисов в B2C & B2B секторе.
+CodeGames.gg is a global provider of gaming services in the B2C & B2B sectors.
 
-Основные продукты и услуги:
+Key products and services:
 
-Gift карты: Широкий выбор подарочных карт для самых популярных игровых платформ и сервисов.
-Биллинговая система Steam: Интеграция с Steam позволяет пользователям легко пополнять свои аккаунты.
-Пополнение мобильных игр UID и Gift Cards: Услуги по мгновенному пополнению аккаунтов в мобильных играх, позволяющие быстро и безопасно увеличивать игровой баланс.
+Gift Cards: A wide selection of gift cards for the most popular gaming platforms and services. Steam Billing System: Integration with Steam allows users to easily top up their accounts. Mobile Games UID and Gift Cards: Services for instant account top-up in mobile games, enabling fast and secure increase of the gaming balance.
 
-Для начала работы с нашей платформой необходимо пройти процедуру подключения, в ходе которой вам будут предоставлены все необходимые данные для аутентификации и входа в систему.
-Контакты для связи и онбординга:
+To start working with our platform, you need to go through a connection procedure during which you will be provided with all necessary data for authentication and system access. Contact for communication and onboarding:
 
-Если у вас возникнут вопросы или вам необходима помощь в процессе регистрации, вы можете связаться с нами через почту:
-email: info@codegames.gg
+If you have any questions or need assistance during the registration process, you can contact us via email at: info@codegames.gg
 
 
 # CodeGames.gg integration

@@ -21,63 +21,63 @@ Available mobile games for top-up by login (By UID):
 
 Game Code                | Game Name                          | Geo Availability
 -------------------------|------------------------------------|-----------------
-pubgm                    | PUBG Mobile                        | Global
-freefire_sgmy            | Freefire SGMY                      | SGMY
-freefire_global          | Freefire Global                    | Global
-genshin                  | Genshin Impact                     | Global
-tof                      | Tower of Fantasy                   | Global
-mlbb                     | Mobile Legends                     | Global
-mlbb_exclusive           | Mobile Legends Exclusive           | Global
-mlbb_indo                | Mobile Legends                     | Indonesia
-mlbb_exclusive_global    | Mobile Legends Exclusive Global    | All except Indonesian accounts
-mlbb_global              | Mobile Legends Global              | Global
-ragnarok_origin          | Ragnarok Origin                    | Global
-bigo                     | Bigo Live Diamonds                 | Global
-identityv                | Identity V                         | Global
-brawlstars               | Brawl Stars                        | Global
-clashofclans             | Clash of Clans                     | Global
-clashroyale              | Clash Royale                       | Global
-hayday                   | Hay Day                            | Global
-nikke                    | GOV: Nikke                         | Global
-maplestorym              | MapleStory M                       | Global
-harry_potter_magic_awakened | Harry Potter: Magic Awaken      | Global
-garena_undawn            | Garena Undawn                      | Global
-honkai_star_rail         | Honkai Star Rail                   | Global
-maplestoryr              | MapleStory R: Evolution            | Global
-undawn_global            | Undawn Global                      | Global
+pubgm                    | Top up PUBG Mobile                        | Global
+freefire_sgmy            | Top up Freefire SGMY                      | SGMY
+freefire_global          | Top up Freefire Global                    | Global
+genshin                  | Top up Genshin Impact                     | Global
+tof                      | Top up Tower of Fantasy                   | Global
+mlbb                     | Top up Mobile Legends                     | Global
+mlbb_exclusive           | Top up Mobile Legends Exclusive           | Global
+mlbb_indo                | Top up Mobile Legends                     | Indonesia
+mlbb_exclusive_global    | Top up Mobile Legends Exclusive Global    | All except Indonesian accounts
+mlbb_global              | Top up Mobile Legends Global              | Global
+ragnarok_origin          | Top up Ragnarok Origin                    | Global
+bigo                     | Top up Bigo Live Diamonds                 | Global
+identityv                | Top up Identity V                         | Global
+brawlstars               | Top up Brawl Stars                        | Global
+clashofclans             | Top up Clash of Clans                     | Global
+clashroyale              | Top up Clash Royale                       | Global
+hayday                   | Top up Hay Day                            | Global
+nikke                    | Top up GOV: Nikke                         | Global
+maplestorym              | Top up MapleStory M                       | Global
+harry_potter_magic_awakened | Top up Harry Potter: Magic Awaken      | Global
+garena_undawn            | Top up Garena Undawn                      | Global
+honkai_star_rail         | Top up Honkai Star Rail                   | Global
+maplestoryr              | Top up MapleStory R: Evolution            | Global
+undawn_global            | Top up Undawn Global                      | Global
 arena_breakout           | Arena Breakout                     | Global
-super_sus                | Super Sus                          | Global
-mlbb_ru                  | Mobile Legends Russia              | Russia
-mlbb_br                  | Mobile Legends Brazil              | Brazil
-mlbb_special             | Mobile Legends Special             | Global
-likee                    | Likee                              | Global
-state_of_survival        | State of Survival                  | Global
-zepeto                    | Zepeto                             | Global
-black_clover_m_asia      | Black Clover M Asia                | Asia
-pgr                      | Punishing Gray Raven               | Global
-farlight84               | Farlight 84                        | Global
-dbdl                     | Dead by Daylight Mobile            | Global
-stumble_guys             | Stumble Guys                       | Global
-bloodstrike              | Blood Strike                       | Global
-whiteout_survival        | Whiteout Survival                  | Global
-wor                      | Watcher of Realms                  | Global
-dragonheir               | Dragonheir: Silent Gods            | Global
-hatsune_miku             | Hatsune Miku                       | Global
-metal_slug               | Metal Slug Awakening               | Global
-sausage_man              | Sausage Man                        | Global
-t3_arena                 | T3 Arena                           | Global
-valorant_my              | Valorant Malaysia                  | Malaysia
-growtopia                | Growtopia                          | Global
-echocalypse              | Youzu Echocalypse                  | Global
-lifeafter                | LifeAfter                          | Global
-eve_echoes               | Eve Echoes                         | Global
-onepunchworld            | One Punch Man World                | Global
-teamfight_tactics        | Teamfight Tactics                  | Global
-legends_of_runeterra     | Legends of Runeterra               | Global
-dragon_raja              | Dragon Raja                        | Global
-hok                      | Honor of Kings                     | Global
-blockman_go              | Blockman Go                        | Global
-lords_mobile             | Lords Mobile                       | Global
-eggy_party               | Eggy Party                         | Global
-dmc                      | Devil May Cry: Peak of Combat      | Global
+super_sus                | Top up Super Sus                          | Global
+mlbb_ru                  | Top up Mobile Legends Russia              | Russia
+mlbb_br                  | Top up Mobile Legends Brazil              | Brazil
+mlbb_special             | Top up Mobile Legends Special             | Global
+likee                    | Top up Likee                              | Global
+state_of_survival        | Top up State of Survival                  | Global
+zepeto                    | Top up Zepeto                             | Global
+black_clover_m_asia      | Top up Black Clover M Asia                | Asia
+pgr                      | Top up Punishing Gray Raven               | Global
+farlight84               | Top up Farlight 84                        | Global
+dbdl                     | Top up Dead by Daylight Mobile            | Global
+stumble_guys             | Top up Stumble Guys                       | Global
+bloodstrike              | Top up Blood Strike                       | Global
+whiteout_survival        | Top up Whiteout Survival                  | Global
+wor                      | Top up Watcher of Realms                  | Global
+dragonheir               | Top up Dragonheir: Silent Gods            | Global
+hatsune_miku             | Top up Hatsune Miku                       | Global
+metal_slug               | Top up Metal Slug Awakening               | Global
+sausage_man              | Top up Sausage Man                        | Global
+t3_arena                 | Top up T3 Arena                           | Global
+valorant_my              | Top up Valorant Malaysia                  | Malaysia
+growtopia                | Top up Growtopia                          | Global
+echocalypse              | Top up Youzu Echocalypse                  | Global
+lifeafter                | Top up LifeAfter                          | Global
+eve_echoes               | Top up Eve Echoes                         | Global
+onepunchworld            | Top up One Punch Man World                | Global
+teamfight_tactics        | Top up Teamfight Tactics                  | Global
+legends_of_runeterra     | Top up Legends of Runeterra               | Global
+dragon_raja              | Top up Dragon Raja                        | Global
+hok                      | Top up Honor of Kings                     | Global
+blockman_go              | Top up Blockman Go                        | Global
+lords_mobile             | Top up Lords Mobile                       | Global
+eggy_party               | Top up Eggy Party                         | Global
+dmc                      | Top up Devil May Cry: Peak of Combat      | Global
 

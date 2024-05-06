@@ -7,7 +7,7 @@ Gift Cards: A wide selection of gift cards for the most popular gaming platforms
 
 To start working with our platform, you need to go through a connection procedure during which you will be provided with all necessary data for authentication and system access. Contact for communication and onboarding:
 
-If you have any questions or need assistance during the registration process, you can contact us via email at: info@codegames.gg
+If you have any questions or need assistance during the registration process, you can contact us via email at: info@codegames.gg  , or telegram @igoryan34
 
 
 # CodeGames integration

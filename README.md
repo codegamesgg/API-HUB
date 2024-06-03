@@ -1,4 +1,4 @@
-# CODE GAMES API-HUB
+ CODE GAMES API-HUB
 CodeGames.gg is a global provider of gaming services in the B2C & B2B sectors.
 
 Key products and services:
@@ -13,124 +13,123 @@ If you have any questions or need assistance during the registration process, yo
 # CodeGames integration
 
 ## Get product offer
-`/api/v1/partner/product-offer/check`
+`/api/v1/offers/find-one`
 
-### Input
 HTTP Method: `POST`
-
-Body:
-
-| Parameter |  Type  | Description      |
-|-----------|:------:|------------------|
-| `offerId` | number | Product offer ID |
 
 #### Example request:
 
 ```json
 {
-  "offerId": 2
+  "offerId": 2061
 }
 ```
-### Output
-HTTP Status: `200`
-
-Body:
-
-| Parameter  |  Type  | Description             |
-|------------|:------:|-------------------------|
-| `offerId`  | number | Product offer ID        |
-| `name`     | string | Product offer name      |
-| `count`    | number | Count of product offers |
-| `price`    | float  | Price of product offer  |
-| `currency` | string | EUR                     |
 
 #### Example response:
 
 ```json
 {
-  "offerId": 2,
-  "name": "Steam Gift Card $5 Global Activation Code",
-  "count": 521,
-  "price": 6.47,
-  "currency": "EUR"
+  "offerId": 2061,
+  "productName": "PUBG",
+  "offerName": "60 UC",
+  "count": 1,
+  "price": 674.47,
+  "currency": "KZT"
 }
 ```
 
-## Pay product offer
-`/api/v1/partner/product-offer/buy`
+## Create order
+`/api/v1/offers/create-order`
 
-### Input
 HTTP Method: `POST`
-
-Body:
-
-| Parameter          |  Type  | Description            |
-|--------------------|:------:|------------------------|
-| `offerId`          | number | Product offer ID       |
-| `price`            | float  | Price of product offer |
-| `transactionId`    | string | Your transaction id    |
 
 #### Example request:
 
 ```json
 {
-  "offerId": 2,
-  "price": 6.47,
+  "offerId": 2061,
+  "price": 674.47,
   "transactionId": "112321124214"
 }
 ```
 
-### Output
-HTTP Status: `201`
-
-Body:
-
-| Parameter |  Type  | Description            |
-|-----------|:------:|------------------------|
-| `orderId` | number | Product offer order id |
-
 #### Example response:
 
 ```json
 {
-  "orderId": 4
+  "orderId": 10502,
+  "count": 1,
+  "price": 674.47,
+  "currency": "KZT",
+  "offerId": 2061,
+  "productName": "PUBG",
+  "offerName": "60 UC",
+  "status": "COMPLETED",
+  "key": "001434249936"
 }
 ```
 
-## Get keys
-`/api/v1/partner/product-offer/keys`
+If the status is COMPLETED, the key will be returned immediately. If the status is PROCESSING, the key is not present in the body.
 
-### Input
+#### Example response with PROCESSING status:
+```json
+{
+  "orderId": 10502,
+  "count": 1,
+  "price": 674.47,
+  "currency": "KZT",
+  "offerId": 2061,
+  "productName": "PUBG",
+  "offerName": "60 UC",
+  "status": "PROCESSING"
+}
+```
+
+## Check order status
+`/api/v1/offers/order-status`
+
 HTTP Method: `POST`
-
-Body:
-
-| Parameter |  Type  | Description            |
-|-----------|:------:|------------------------|
-| `orderId` | number | Product offer order ID |
 
 #### Example request:
 
 ```json
 {
-  "orderId": 4
+  "orderId": 10502
 }
 ```
-
-### Output
-HTTP Status: `200`
-
-Body:
-
-| Parameter |  Type  | Description |
-|-----------|:------:|-------------|
-| `key`     | string | Product key |
 
 #### Example response:
 
 ```json
 {
-  "key": "XBBRF-MR09R-NX8V"
+  "status": "PROCESSING"
+}
+```
+
+**The following are the possible order statuses:**
+
+* PROCESSING: The order is being processed. Please wait a while for the keys to be ready.
+* COMPLETED: The order has been processed. The keys are ready and can be picked up.
+* CANCELED | REFUND: The order has been cancelled. Keys will not be provided.
+
+## Get keys
+`/api/v1/offers/keys`
+
+HTTP Method: `POST`
+
+#### Example request:
+
+```json
+{
+  "orderId": 10502
+}
+```
+
+#### Example response:
+
+```json
+{
+  "key": "001434249936"
 }
 ```
 

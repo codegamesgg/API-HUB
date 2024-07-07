@@ -1,4 +1,4 @@
- CODE GAMES API-HUB
+ODE GAMES API-HUB
 CodeGames.gg is a global provider of gaming services in the B2C & B2B sectors.
 
 Key products and services:
@@ -25,16 +25,32 @@ HTTP Method: `POST`
 }
 ```
 
-#### Example response:
+#### Example response with gift card:
 
 ```json
 {
   "offerId": 2061,
   "productName": "PUBG",
   "offerName": "60 UC",
-  "count": 1,
   "price": 674.47,
-  "currency": "KZT"
+  "currency": "KZT",
+  "isReturnDataForCustomer": true
+}
+```
+
+#### Example response without gift card:
+
+```json
+{
+  "offerId": 2061,
+  "productName": "PUBG",
+  "offerName": "60 UC",
+  "price": 674.47,
+  "currency": "KZT",
+  "isReturnDataForCustomer": false,
+  "required": [
+    "gameUserId"
+  ]
 }
 ```
 
@@ -43,7 +59,7 @@ HTTP Method: `POST`
 
 HTTP Method: `POST`
 
-#### Example request:
+#### Example request with gift card:
 
 ```json
 {
@@ -53,25 +69,38 @@ HTTP Method: `POST`
 }
 ```
 
-#### Example response:
+#### Example request without gift card:
+
+```json
+{
+  "offerId": 2061,
+  "price": 674.47,
+  "transactionId": "112321124214",
+  "customer": {
+    "gameUserId": "52357322414"
+  }
+}
+```
+
+#### Example response with gift card:
 
 ```json
 {
   "orderId": 10502,
-  "count": 1,
   "price": 674.47,
   "currency": "KZT",
   "offerId": 2061,
   "productName": "PUBG",
   "offerName": "60 UC",
   "status": "COMPLETED",
-  "key": "001434249936"
+  "key": "001434249936",
+  "isReturnDataForCustomer": true
 }
 ```
 
 If the status is COMPLETED, the key will be returned immediately. If the status is PROCESSING, the key is not present in the body.
 
-#### Example response with PROCESSING status:
+#### Example response with PROCESSING status and gift card:
 ```json
 {
   "orderId": 10502,
@@ -81,9 +110,28 @@ If the status is COMPLETED, the key will be returned immediately. If the status 
   "offerId": 2061,
   "productName": "PUBG",
   "offerName": "60 UC",
-  "status": "PROCESSING"
+  "status": "PROCESSING",
+  "isReturnDataForCustomer": true
 }
 ```
+
+#### Example response without gift card:
+
+```json
+{
+  "orderId": 10502,
+  "price": 674.47,
+  "currency": "KZT",
+  "offerId": 2061,
+  "productName": "PUBG",
+  "offerName": "60 UC",
+  "status": "COMPLETED",
+  "key": "001434249936",
+  "isReturnDataForCustomer": false
+}
+```
+
+If `isReturnDataForCustomer` is false, there is no need to query for `offers/keys` as it will return an error.
 
 ## Check order status
 `/api/v1/offers/order-status`
@@ -102,7 +150,8 @@ HTTP Method: `POST`
 
 ```json
 {
-  "status": "PROCESSING"
+  "status": "PROCESSING",
+  "isReturnDataForCustomer": true
 }
 ```
 
@@ -116,6 +165,8 @@ HTTP Method: `POST`
 `/api/v1/offers/keys`
 
 HTTP Method: `POST`
+
+If `isReturnDataForCustomer` was false, the query will return an error.
 
 #### Example request:
 
@@ -132,4 +183,3 @@ HTTP Method: `POST`
   "key": "001434249936"
 }
 ```
-
